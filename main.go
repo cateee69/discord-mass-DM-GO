@@ -231,7 +231,7 @@ func main() {
 			wg.Add(len(tokens))
 			for i := 0; i < len(tokens); i++ {
 				go func(i int) {
-					for {
+					for 
 						a := directmessage.OpenChannel(tokens[i], UUID)
 						b := directmessage.SendMessage(tokens[i], a, config.Message)
 						if b.StatusCode == 200 {
